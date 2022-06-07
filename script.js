@@ -11,13 +11,13 @@ function media(){
     var freq = ((aulas - faltas) / aulas) * 100;
 
     if(media >= 7 && freq >= 75) {
-        div.innerHTML += "<p>Aprovado</p>"
+        div.innerHTML += "<p><b>Situação:</b> Aprovado</p>"
     }
         else if (freq <75) {
-            div.innerHTML += "<p>Reprovado</p>"
+            div.innerHTML += "<p><b>Situação:</b> Reprovado</p>"
         } 
             else if (media <7 && freq >= 75) {
-                div.innerHTML += "<p>Exame</p>"
+                div.innerHTML += "<p><b>Situação:</b> Exame</p>"
             } 
             
     }
